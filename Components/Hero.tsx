@@ -24,8 +24,10 @@ export default function Hero() {
           Shaping Leaders, Advancing Knowledge and Inspiring Generations
         </p>
         <Link href="/academics">
-          <button className="border border-white px-8 py-3 text-sm uppercase tracking-wide hover:bg-white hover:text-black transition duration-300">
-            Explore Academics
+          <button className="group relative overflow-hidden border border-white px-8 py-3 text-sm uppercase tracking-wide text-white transition-colors duration-300 hover:text-black">
+            {/* The white background that slides in from left to right on hover */}
+            <span className="absolute inset-0 w-full h-full -translate-x-full bg-white transition-transform duration-300 ease-out group-hover:translate-x-0"></span>
+            <span className="relative z-10">Explore Academics</span>
           </button>
         </Link>
       </div>

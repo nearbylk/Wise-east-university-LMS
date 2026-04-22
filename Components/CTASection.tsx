@@ -5,8 +5,10 @@ export default function CTASection() {
       <div className="max-w-4xl mx-auto">
         <h2 className="text-2xl font-bold mb-8 text-black">Begin Your Journey</h2>
         {/* Apply Now button with hover effect */}
-        <button className="bg-[#424242] text-white px-10 py-3 text-sm font-medium hover:bg-black transition duration-300">
-          Apply Now
+        <button className="group relative overflow-hidden bg-[#424242] px-10 py-3 text-sm font-medium text-white transition-colors duration-300">
+          {/* The black background that slides in from left to right on hover */}
+          <span className="absolute inset-0 w-full h-full -translate-x-full bg-black transition-transform duration-300 ease-out group-hover:translate-x-0"></span>
+          <span className="relative z-10">Apply Now</span>
         </button>
       </div>
     </section>
